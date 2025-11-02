@@ -23,8 +23,6 @@ npm run build
 
 ---
 
-
-
 ## ✍️ Ajouter un Nouvel Article
 
 ### Méthode Simple
