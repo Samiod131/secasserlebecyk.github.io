@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Sections
+---
+
+<h1>Toutes les Sections</h1>
+
+<div class="section-list">
+    {% for section in collections.sectionList %}
+    {% set sectionPosts = collections.blog | filterBySection(section) %}
+    <div class="section-item">
+        <h2><a href="/sections/{{ section }}/">{{ section }}</a></h2>
+        <p>{{ sectionPosts.length }} article{% if sectionPosts.length > 1 %}s{% endif %}</p>
+    </div>
+    {% endfor %}
+</div>

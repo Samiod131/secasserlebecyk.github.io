@@ -1,0 +1,21 @@
+{
+  "name": "secasserlebecyk",
+  "version": "1.0.0",
+  "description": "Blog Se Casser le Bec YK",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": ["blog", "eleventy"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "markdown-it-texmath": "^1.0.0",
+    "katex": "^0.16.9"
+  }
+}

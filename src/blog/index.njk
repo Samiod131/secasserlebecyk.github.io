@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: Blog
+permalink: /blog/index.html
+---
+
+<h1>Tous les Articles</h1>
+
+<div class="blog-list">
+    {% set postslist = collections.blog | reverse %}
+    {% for post in postslist %}
+    <article class="blog-item">
+        {% if post.data.thumbnail %}
+        <div class="post-thumbnail">
+            <a href="{{ post.url }}">
+                <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}">
+            </a>
+        </div>
+        {% endif %}
+        <div class="post-content-wrapper">
+            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <div class="post-meta">
+                <time>{{ post.data.date | readableDate }}</time>
+                {% if post.data.section %}
+                <span class="separator">•</span>
+                <a href="/sections/{{ post.data.section }}/">{{ post.data.section }}</a>
+                {% endif %}
+            </div>
+            {% if post.data.description %}
+            <p>{{ post.data.description }}</p>
+            {% endif %}
+            {% if post.data.tags %}
+            <div class="post-tags">
+                {% for tag in post.data.tags %}
+                <a href="/tags/{{ tag }}/" class="tag">#{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </article>
+    {% endfor %}
+</div>
