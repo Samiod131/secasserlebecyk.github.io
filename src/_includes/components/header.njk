@@ -1,17 +1,17 @@
 <header class="site-header">
     <div class="container">
         <div class="header-content">
-            <a href="/" class="logo">
-                <img src="/images/logo.svg" alt="Se Casser le Bec YK" class="logo-image">
+            <a href="{{ '/' | url }}" class="logo">
+                <img src="{{ '/images/logo.svg' | url }}" alt="Se Casser le Bec YK" class="logo-image">
                 <span class="logo-text">Se Casser le Bec YK</span>
             </a>
             
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="/sections/">Sections</a></li>
-                    <li><a href="/tags/">Tags</a></li>
+                    <li><a href="{{ '/' | url }}">Accueil</a></li>
+                    <li><a href="{{ '/blog/' | url }}">Blog</a></li>
+                    <li><a href="{{ '/sections/' | url }}">Sections</a></li>
+                    <li><a href="{{ '/tags/' | url }}">Tags</a></li>
                 </ul>
             </nav>
         </div>

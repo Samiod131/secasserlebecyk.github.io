@@ -23,7 +23,7 @@ layout: layouts/base.njk
         {% if post.data.tags %}
         <div class="post-tags">
             {% for tag in post.data.tags %}
-            <a href="/tags/{{ tag }}/" class="tag">#{{ tag }}</a>
+            <a href="{{ ('/tags/' + tag + '/') | url }}" class="tag">#{{ tag }}</a>
             {% endfor %}
         </div>
         {% endif %}
@@ -31,4 +31,4 @@ layout: layouts/base.njk
     {% endfor %}
 </div>
 
-<a href="/sections/" class="back-link">← Toutes les sections</a>
+<a href="{{ '/sections/' | url }}" class="back-link">← Toutes les sections</a>

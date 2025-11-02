@@ -9,7 +9,7 @@ title: Sections
     {% for section in collections.sectionList %}
     {% set sectionPosts = collections.blog | filterBySection(section) %}
     <div class="section-item">
-        <h2><a href="/sections/{{ section }}/">{{ section }}</a></h2>
+        <h2><a href="{{ ('/sections/' + section + '/') | url }}">{{ section }}</a></h2>
         <p>{{ sectionPosts.length }} article{% if sectionPosts.length > 1 %}s{% endif %}</p>
     </div>
     {% endfor %}

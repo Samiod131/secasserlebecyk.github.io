@@ -8,7 +8,7 @@ title: Tags
 <div class="tag-cloud">
     {% for tag in collections.tagList %}
     {% set taggedPosts = collections.blog | filterByTag(tag) %}
-    <a href="/tags/{{ tag }}/" class="tag-item">
+    <a href="{{ ('/tags/' + tag + '/') | url }}" class="tag-item">
         #{{ tag }} <span class="count">({{ taggedPosts.length }})</span>
     </a>
     {% endfor %}

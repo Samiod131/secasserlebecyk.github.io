@@ -9,13 +9,13 @@ layout: layouts/base.njk
             <time datetime="{{ date }}">{{ date | readableDate }}</time>
             {% if section %}
             <span class="separator">•</span>
-            <a href="/sections/{{ section }}/" class="section-link">{{ section }}</a>
+            <a href="{{ ('/sections/' + section + '/') | url }}" class="section-link">{{ section }}</a>
             {% endif %}
         </div>
         {% if tags %}
         <div class="post-tags">
             {% for tag in tags %}
-            <a href="/tags/{{ tag }}/" class="tag">#{{ tag }}</a>
+            <a href="{{ ('/tags/' + tag + '/') | url }}" class="tag">#{{ tag }}</a>
             {% endfor %}
         </div>
         {% endif %}
@@ -26,6 +26,6 @@ layout: layouts/base.njk
     </div>
     
     <footer class="post-footer">
-        <a href="/blog/" class="back-link">← Retour au blog</a>
+        <a href="{{ '/blog/' | url }}" class="back-link">← Retour au blog</a>
     </footer>
 </article>

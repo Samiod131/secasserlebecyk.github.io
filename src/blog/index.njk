@@ -23,7 +23,7 @@ permalink: /blog/index.html
                 <time>{{ post.data.date | readableDate }}</time>
                 {% if post.data.section %}
                 <span class="separator">•</span>
-                <a href="/sections/{{ post.data.section }}/">{{ post.data.section }}</a>
+                <a href="{{ ('/sections/' + post.data.section + '/') | url }}">{{ post.data.section }}</a>
                 {% endif %}
             </div>
             {% if post.data.description %}
@@ -32,7 +32,7 @@ permalink: /blog/index.html
             {% if post.data.tags %}
             <div class="post-tags">
                 {% for tag in post.data.tags %}
-                <a href="/tags/{{ tag }}/" class="tag">#{{ tag }}</a>
+                <a href="{{ ('/tags/' + tag + '/') | url }}" class="tag">#{{ tag }}</a>
                 {% endfor %}
             </div>
             {% endif %}

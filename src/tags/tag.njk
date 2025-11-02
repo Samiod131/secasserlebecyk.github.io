@@ -18,7 +18,7 @@ layout: layouts/base.njk
             <time>{{ post.data.date | readableDate }}</time>
             {% if post.data.section %}
             <span class="separator">•</span>
-            <a href="/sections/{{ post.data.section }}/">{{ post.data.section }}</a>
+            <a href="{{ ('/sections/' + post.data.section + '/') | url }}">{{ post.data.section }}</a>
             {% endif %}
         </div>
         {% if post.data.description %}
@@ -28,4 +28,4 @@ layout: layouts/base.njk
     {% endfor %}
 </div>
 
-<a href="/tags/" class="back-link">← Tous les tags</a>
+<a href="{{ '/tags/' | url }}" class="back-link">← Tous les tags</a>

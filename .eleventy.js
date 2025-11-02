@@ -68,6 +68,7 @@ module.exports = function(eleventyConfig) {
   });
   
   return {
+    pathPrefix: "/secasserlebecyk.github.io/",
     dir: {
       input: "src",
       output: "_site",

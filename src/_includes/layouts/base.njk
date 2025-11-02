@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
     {% include "components/header.njk" %}
@@ -21,6 +21,6 @@
     
     {% include "components/footer.njk" %}
     
-    <script src="/js/main.js"></script>
+    <script src="{{ '/js/main.js' | url }}"></script>
 </body>
 </html>
