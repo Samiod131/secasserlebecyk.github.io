@@ -1,0 +1,43 @@
+Quelques idées d'entrées de blog ou de projets séries:
+
+-Une série sur l'impro et l'absence de jugement de soi dans le jeu. Sur l'espect ludique que peut carr.ment prendre l'échec.
+
+-Une série sur l'apprentissage de la théorie de la musique selon une perspective physicienne. 
+
+-Une série sur la théorie des jeux. Ce serait surtout une opportunité d'explorer ce sujet là par moi-même.
+
+-Un petit morceau sur mon compresseur d'image
+
+-Sur mon cisaillement par rappoort à l'enseignement et son conformisme. Plusieurs entrées sur cet angle là.
+
+-Ce que mon passage entant que pipeline TD m'a appris. 
+
+
+Quelques idées de mise en forme:
+
+-Déjà un css qui suce pas le cul. Ajouter des dessins persos pour les éléments du menu.
+
+-Je vais éventuellement devoir utiliser un générateur statique comme HUGO ou pelican pour scaler ça. Ça a pas d'allure ed faire des copies pour chaque nouvel article.
+    Éventuellement il pourra y avoir des séries, une barre de recherche, peut-être même une section commentaires (staticman). Mais c'est du boulot.
+
+-Des images et dessins pour les boutons cliquables. 
+
+Haute voltige:
+
+-Un journal de mes rêves avec des images
+
+-Un répertoire de projets créatifs
+
+Un répertoire de dessin
+
+-Une liste de choses qui me rendent heureux. 
+
+
+Des pistes d'inspiration:
+
+https://daliwali.neocities.org/
+
+https://ribo.zone/
+
+https://caramelfevers.neocities.org/
+
